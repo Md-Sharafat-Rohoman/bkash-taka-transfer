@@ -24,12 +24,14 @@ document.getElementById('add-money').addEventListener('click',function(event){
 
     const mainBalance = document.getElementById('main-balance').innerText;
     const convertedMainBalance = parseFloat(mainBalance);
+    console.log('22222')
     if(accountNumber.length === 11){
         if(convertedPin === 1234){
             const sum = convertedMainBalance + convertedAmount;
             // console.log(convertedMainBalance, convertedAmount);
             // console.log(sum) ;
             document.getElementById('main-balance').innerText = sum;
+
 
         }
 
